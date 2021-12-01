@@ -17,6 +17,7 @@
         <module>Formatter.Implementation</module>
         <module>Telegrambot.Container</module>
         <module>Telegramnot.EndPoint</module>
+        <module>CommandLine.Run</module>
     </modules>
 
     <properties>
