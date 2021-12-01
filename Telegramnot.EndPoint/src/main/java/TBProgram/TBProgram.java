@@ -6,7 +6,7 @@ import org.telegram.telegrambots.updatesreceivers.DefaultBotSession;
 public class TBProgram {
     public static void main(String[] args) throws TelegramApiException {
         TelegramBotsApi telegramBotsApi = new TelegramBotsApi(DefaultBotSession.class);
-        telegramBotsApi.registerBot(new Mybot.TBot());
+        telegramBotsApi.registerBot(new Mybot.TeleBot());
     }
 
 }
