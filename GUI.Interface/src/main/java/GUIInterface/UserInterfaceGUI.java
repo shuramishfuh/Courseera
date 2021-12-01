@@ -40,6 +40,7 @@ public class UserInterfaceGUI extends JFrame {
 
         setTitle("CourSeera: Your everyday tool for AUB courses");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setBackground(Color.BLUE);
         setBounds(100, 100, 1121, 526);
         contentPane = new JPanel();
         contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
