@@ -24,25 +24,25 @@ public class outPutFormatter implements IoutputFormatter {
 
         switch (methodAndList.firstKey()) {
 
-            case ConstantVariables.help:
-                return ConstantVariables.userhelp;
+            case ConstVar.help:
+                return ConstVar.userhelp;
 
-            case ConstantVariables.InvalidDate:
-            case ConstantVariables.InvalidRoom:
-            case ConstantVariables.InvalidDayOfWeek:
-            case ConstantVariables.InvalidProfName:
-            case ConstantVariables.InvalidCommand:
-            case ConstantVariables.RoomIsEmpty:
-            case ConstantVariables.NotInClass:
-            case ConstantVariables.NoCoursesGiven:
-            case ConstantVariables.NoClassesThisDate:
-            case ConstantVariables.NoClassesThisDay:
-            case ConstantVariables.SomethingWentWrong:
+            case ConstVar.InvalidDate:
+            case ConstVar.InvalidRoom:
+            case ConstVar.InvalidDayOfWeek:
+            case ConstVar.InvalidProfName:
+            case ConstVar.InvalidCommand:
+            case ConstVar.RoomIsEmpty:
+            case ConstVar.NotInClass:
+            case ConstVar.NoCoursesGiven:
+            case ConstVar.NoClassesThisDate:
+            case ConstVar.NoClassesThisDay:
+            case ConstVar.SomethingWentWrong:
                 return methodAndList.firstKey();
 
-            case ConstantVariables.WhereIsProf:
-            case ConstantVariables.WhoIsThereNow:
-            case ConstantVariables.WhoWasThereLast:
+            case ConstVar.WhereIsProf:
+            case ConstVar.WhoIsThereNow:
+            case ConstVar.WhoWasThereLast:
                 return scheduleToString(methodAndList.get(methodAndList.firstKey()).get(0));
             default:
                 return scheduleToString(

@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class InputParser implements IinputParser {
+public class Parser implements IinputParser {
 
     @Override
     public List<String> convertStringToInstruction(String str) {

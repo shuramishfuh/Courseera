@@ -19,7 +19,7 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
-public class UserInterfaceGUI extends JFrame {
+public class GUI_User_Interface extends JFrame {
 
     private final JPanel panel = new JPanel();
     private JPanel contentPane;
@@ -31,7 +31,7 @@ public class UserInterfaceGUI extends JFrame {
     /**
      * Create the frame.
      */
-    public UserInterfaceGUI() {
+    public GUI_User_Interface() {
         Initializer initializer = new Initializer("\\Core.Implementation\\src\\Data\\", "https://www-banner.aub.edu.lb/catalog/schd_");
         List<Course> courses = new ArrayList<Course>();
         initializer.listGenerator(courses);
@@ -318,7 +318,7 @@ public class UserInterfaceGUI extends JFrame {
         EventQueue.invokeLater(new Runnable() {
             public void run() {
                 try {
-                    UserInterfaceGUI frame = new UserInterfaceGUI();
+                    GUI_User_Interface frame = new GUI_User_Interface();
                     frame.setVisible(true);
                 } catch (Exception e) {
                     e.printStackTrace();
