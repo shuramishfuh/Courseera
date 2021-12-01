@@ -1,2 +1,5 @@
-module $MODULE_NAME$ {
+module Telegramnot.EndPoint {
+    requires Telegrambot.Container;
+    requires telegrambots.meta;
+    requires telegrambots;
 }

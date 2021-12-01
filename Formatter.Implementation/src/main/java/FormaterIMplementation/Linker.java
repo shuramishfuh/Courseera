@@ -1,14 +1,14 @@
-package FEImplementation;
+package FormaterIMplementation;
 
-import FEInterfaces.ILinker;
+import CoreInterfaces.CourSeera;
+import CoreInterfaces.CourSeeraFactory;
+import CoreInterfaces.Course;
+import CoreInterfaces.Schedule;
+import FormaterEngineInterfaces.ILinker;
 import Implementations.IMCourSeeraFactory;
 import Implementations.IMInstructor;
 import Implementations.IMRoom;
 import Implementations.Initializer;
-import Interfaces.CourSeera;
-import Interfaces.CourSeeraFactory;
-import Interfaces.Course;
-import Interfaces.Schedule;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
@@ -30,9 +30,9 @@ public class Linker implements ILinker {
      */
     @Override
     public TreeMap<String, List<Schedule>> callCoursera(List<String> Ls) {
-
+        Initializer initializer = new Initializer("\\Core.Implementation\\src\\Data\\", "https://www-banner.aub.edu.lb/catalog/schd_");
         List<Course> courses = new ArrayList<>();
-        Initializer.listGenerator(courses);
+        initializer.listGenerator(courses);
         CourSeeraFactory csf = new IMCourSeeraFactory();
         CourSeera CS = csf.createInstance(courses);
 

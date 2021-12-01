@@ -1,7 +1,8 @@
-package FEImplementation;
+package FormaterIMplementation;
 
-import FEInterfaces.IoutputFormatter;
-import Interfaces.Schedule;
+
+import CoreInterfaces.Schedule;
+import FormaterEngineInterfaces.IoutputFormatter;
 
 import java.util.List;
 import java.util.TreeMap;

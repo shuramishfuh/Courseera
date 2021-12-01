@@ -1,4 +1,4 @@
-package FEImplementation;
+package FormaterIMplementation;
 
 public class ConstantVariables {
     public static final String RoomSchedule = "roomschedule";
